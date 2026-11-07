@@ -1,0 +1,158 @@
+/* General page style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111111;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    padding: 30px;
+}
+
+/* Main title */
+h1 {
+    color: #d4af37;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 15px;
+}
+
+/* Information paragraph */
+p {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    background-color: #1c1c1c;
+    padding: 25px;
+    border-left: 5px solid #d4af37;
+    border-radius: 8px;
+    font-size: 17px;
+    color: #dddddd;
+    white-space: pre-line;
+}
+
+/* Car image */
+img {
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Image hover effect */
+img:hover {
+    transform: scale(1.02);
+}
+
+/* Mobile design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 35px;
+        letter-spacing: 3px;
+    }
+
+    p {
+        padding: 15px;
+        font-size: 15px;
+    }
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00adef; /* Mercedes Blue Highlight */
+}
+
+/* Page Layout Styling */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #dddddd;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.image-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}

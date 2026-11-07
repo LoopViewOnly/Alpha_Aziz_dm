@@ -1,0 +1,209 @@
+/* General style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #101114;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    padding: 30px;
+}
+
+/* Main title */
+h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #e5e5e5;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px #777;
+}
+
+/* Subtitle */
+h2 {
+    color: #c0c0c0;
+    text-align: center;
+    margin: 30px 0 15px;
+    font-size: 25px;
+}
+
+/* Car image */
+img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 12px;
+    border: 2px solid #777;
+    box-shadow: 0 0 25px rgba(200, 200, 200, 0.15);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* Paragraphs */
+p {
+    max-width: 850px;
+    margin: 15px auto;
+    padding: 22px;
+    background: #1c1d21;
+    border-left: 4px solid #c0c0c0;
+    border-radius: 8px;
+    color: #d5d5d5;
+    font-size: 17px;
+}
+
+/* Information list */
+ul {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 25px 45px;
+    background: #1c1d21;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+li {
+    margin: 10px 0;
+    color: #ddd;
+}
+
+strong {
+    color: #fff;
+}
+
+/* Official website link */
+a {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 12px 25px;
+    background: #c0c0c0;
+    color: #101114;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #fff;
+    box-shadow: 0 0 15px #888;
+    transform: translateY(-3px);
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    p {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    ul {
+        padding: 20px 35px;
+    }
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00adef; /* Mercedes Blue Highlight */
+}
+
+/* Page Layout Styling */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #dddddd;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.image-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
